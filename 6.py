@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # _*_ coding: utf-8 _*_
+#lambda表达式
 
 import sys,random
 
@@ -18,7 +19,8 @@ if  __name__=='__main__':
     while(not n.isdigit()):
         n = raw_input("please input number:")
     n = int(n)
-    if random.randrange(0,10) % 2 == 0:需要import random模块,其中random.randint(a,b)函数include a和b,randrange exclude b
+    if random.randrange(0,10) % 2 == 0:
+		#需要import random模块,其中random.randint(a,b)函数include a和b,randrange exclude b
         #fun = add_num #使用变量前无须定义,add_num函数必须在之前定义,因为python会顺序执行这个脚本
         fun = lambda x, y : x + y
         ret = 0
